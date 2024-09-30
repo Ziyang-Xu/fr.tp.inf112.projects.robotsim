@@ -66,15 +66,15 @@ public class SimulatorApplication {
 		final Robot robot1 = new Robot(factory, jgraphPahtFinder, new CircularShape(5, 5, 2), new Battery(10), "Robot 1");
 		robot1.addTargetComponent(machine1);
 		robot1.addTargetComponent(machine2);
-		robot1.addTargetComponent(new Conveyor(factory, conveyorShape, "Conveyor 1"));
-		robot1.addTargetComponent(chargingStation);
+		//robot1.addTargetComponent(new Conveyor(factory, conveyorShape, "Conveyor 1"));
+		//robot1.addTargetComponent(chargingStation);
 
 		final FactoryPathFinder customPathFinder = new CustomDijkstraFactoryPathFinder(factory, 5);
 		final Robot robot2 = new Robot(factory, customPathFinder, new CircularShape(45, 5, 2), new Battery(10), "Robot 2");
-		robot2.addTargetComponent(chargingStation);
+		//robot2.addTargetComponent(chargingStation);
 		robot2.addTargetComponent(machine1);
 		robot2.addTargetComponent(machine2);
-		robot2.addTargetComponent(new Conveyor(factory, conveyorShape, "Conveyor 1"));
+		//robot2.addTargetComponent(new Conveyor(factory, conveyorShape, "Conveyor 1"));
 		
 		SwingUtilities.invokeLater(new Runnable() {
 			  
