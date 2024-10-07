@@ -143,11 +143,11 @@ public class Robot extends Component {
 				   										   nextPosition.getyCoordinate(),
 				   										   2,
 				   										   2);
-		if (getFactory().hasMobileComponentAt(shape, this)) {
-			this.nextPosition = nextPosition;
-			
-			return null;
-		}
+//		if (getFactory().hasMobileComponentAt(shape, this)) {
+//			this.nextPosition = nextPosition;
+//			
+//			return null;
+//		}
 
 		this.nextPosition = null;
 		
